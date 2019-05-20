@@ -8,48 +8,70 @@ namespace NodeSearchAndAdd
 {
     class BinaryTree
     {
-        private Node start;
-        public int left;
-        public int right;
 
-
-        public void BinaryTreeStart()
+        public void Add(Node node, int data)
         {
-            start = null;
-        }
+            Node temporary = new Node(data);
 
-        public void CreateTree(int data)
-        {
-
-            InsertAtEnd(data);
-        }
-
-        public void InsertAtEnd(int data)
-        {
-            Node node;
-            Node temp = new Node(data);
-            if (start == null)
-            {
-                start = temp;
-                return;
-            }
-            //-----------------------------------------------------------------------------------------
-            node = start;
-            if (temp.info <= node.info)
+            if (temporary.info <= node.info)
             {
                 if (node.leftLink == null)
                 {
-                    node.leftLink = temp;
+                    node.leftLink = temporary;
                 }
-                else { InsertAtEnd(data); }
-            }
-            if (node.rightLink == null)
-            {
-                node.rightLink = temp;
-            }
-            else { InsertAtEnd(data); }
-        }
+                else
+                {
+                    Add(node.leftLink, data);
+                }
 
+            }
+            if (temporary.info > node.info)
+                if (node.rightLink == null)
+                {
+                    node.rightLink = temporary;
+                }
+                else { Add(node.rightLink, data); }
+
+        }
+        public void Search(Node node, int data)
+        {
+            if (data == node.info)
+            {
+                Console.Write(node.info);
+            }
+            if (data <= node.info)
+            {
+                if (node.leftLink == null)
+                {
+                    Console.WriteLine("No data found");
+                }
+                else if (data == node.leftLink.info)
+                {
+                    Console.Write(node.leftLink.info);
+                }
+                else
+                {
+                    Search(node.leftLink, data);
+                }
+
+            }
+            if (data > node.info)
+            {
+                if (node.rightLink == null)
+                {
+                    Console.WriteLine("No data found");
+                }
+                else if (data == node.rightLink.info)
+                {
+                    Console.Write(node.rightLink.info);
+                }
+                else
+                {
+                    Search(node.rightLink, data);
+                }
+
+            }
+        }
     }
 }
-}
+

@@ -15,7 +15,7 @@ namespace NodeSearchAndAdd
         {
             this.info = info;
             rightLink = null;
-            leftLink = null;
+            leftLink = null;            
         }
     }
 }

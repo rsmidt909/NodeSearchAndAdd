@@ -1,0 +1,7 @@
+C:\Users\rsmid\Desktop\dev\c#\NodeSearchAndAdd\NodeSearchAndAdd\obj\Debug\NodeSearchAndAdd.csprojAssemblyReference.cache
+C:\Users\rsmid\Desktop\dev\c#\NodeSearchAndAdd\NodeSearchAndAdd\obj\Debug\NodeSearchAndAdd.csproj.CoreCompileInputs.cache
+C:\Users\rsmid\Desktop\dev\c#\NodeSearchAndAdd\NodeSearchAndAdd\bin\Debug\NodeSearchAndAdd.exe.config
+C:\Users\rsmid\Desktop\dev\c#\NodeSearchAndAdd\NodeSearchAndAdd\bin\Debug\NodeSearchAndAdd.exe
+C:\Users\rsmid\Desktop\dev\c#\NodeSearchAndAdd\NodeSearchAndAdd\bin\Debug\NodeSearchAndAdd.pdb
+C:\Users\rsmid\Desktop\dev\c#\NodeSearchAndAdd\NodeSearchAndAdd\obj\Debug\NodeSearchAndAdd.exe
+C:\Users\rsmid\Desktop\dev\c#\NodeSearchAndAdd\NodeSearchAndAdd\obj\Debug\NodeSearchAndAdd.pdb
