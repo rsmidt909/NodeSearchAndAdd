@@ -8,7 +8,7 @@ namespace NodeSearchAndAdd
 {
     class BinaryTree
     {
-
+        public bool foundItem;
         public void Add(Node node, int data)
         {
             Node temporary = new Node(data);
@@ -38,16 +38,22 @@ namespace NodeSearchAndAdd
             if (data == node.info)
             {
                 Console.Write(node.info);
+                foundItem = true;
+               
             }
             if (data <= node.info)
             {
                 if (node.leftLink == null)
                 {
                     Console.WriteLine("No data found");
+                    foundItem = false;
+                   
                 }
                 else if (data == node.leftLink.info)
                 {
                     Console.Write(node.leftLink.info);
+                    foundItem = true;
+                    
                 }
                 else
                 {
@@ -60,10 +66,14 @@ namespace NodeSearchAndAdd
                 if (node.rightLink == null)
                 {
                     Console.WriteLine("No data found");
+                    foundItem = false;
+                    
                 }
                 else if (data == node.rightLink.info)
                 {
                     Console.Write(node.rightLink.info);
+                    foundItem = true;
+                    
                 }
                 else
                 {
